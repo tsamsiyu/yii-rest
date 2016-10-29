@@ -5,6 +5,13 @@
   "license": "MIT",
   "version": "1.0.0-beta1",
   "type": "library",
+  "authors": [
+    {
+      "name": "Dmitry Likhovoi",
+      "email": "ts.likhovoi.dim@gmail.com",
+      "role": "Developer"
+    }
+  ],
   "require": {
     "php": ">=5.6.0",
     "yiisoft/yii2": "*"
