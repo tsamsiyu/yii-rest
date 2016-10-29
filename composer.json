@@ -1,7 +1,7 @@
 {
   "name": "tsamsiyu/yii-rest",
   "description": "Usable features to build the REST architecture in Yii more pleasant",
-  "keywords": ["yii", "routes", "route", "nested", "embed", "urlManager", "rest"],
+  "keywords": ["yii", "routes", "route", "nested", "embed", "urlManager", "rest", "resource", "api"],
   "license": "MIT",
   "version": "1.0.0-beta1",
   "type": "project",
