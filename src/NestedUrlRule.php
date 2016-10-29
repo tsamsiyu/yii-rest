@@ -177,10 +177,11 @@ class NestedUrlRule extends Object implements UrlRuleInterface
 
     public function getControllerName()
     {
+        $controller = implode('/', $this->resources);
         if ($this->controller) {
-            return $this->controller;
+            return strtr($this->controller, ['{controller}' => $controller]);
         } else {
-            return implode('/', $this->resources);
+            return $controller;
         }
     }
 

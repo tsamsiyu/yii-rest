@@ -13,7 +13,7 @@ put it in your urlManager.rules:
 
 It will compose the next routes:
 
-```
+```php
 'GET        companies/<companyId:\d+>/banks/<bankId:\d+>/accounts'          => 'company/bank/account/index',
 'GET        companies/<companyId:\d+>/banks/<bankId:\d+>/accounts/<id:\d+>' => 'company/bank/account/view',
 'POST       companies/<companyId:\d+>/banks/<bankId:\d+>/accounts'          => 'company/bank/account/create',
@@ -40,4 +40,14 @@ You can override the controller actions and specify the prefix:
         'GET {permanentUrl}/{resourceId}/download' => 'downloadView',
         'HEAD {permanentUrl}/files' => 'my/custom/action/without/routes/map',
     ]
+```
+
+Also you can define the controller namespace (concatenation of resources with backslash will be used by default).
+Just specify the 'controller' key in your rule config:
+
+```php
+    'class' => 'tsamsiyu\yii\rest\NestedUrlRule',
+    'resources' => ['company', 'bank', 'account'],
+    'prefix' => 'operator',
+    'controller' => 'operator/{controller}' // {controller} placeholder is "company/bank/account"
 ```
