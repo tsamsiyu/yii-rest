@@ -30,15 +30,15 @@ You can override the controller actions and specify the prefix:
     'resources' => ['company', 'bank', 'account'],
     'prefix' => 'v2/operator',
     'routesMap' => [
-        'index' => '{controller}/all',
-        'view' => '{controller}/one',
-        'downloadIndex' => '{controller}/downloadAll',
-        'downloadView' => '{controller}/downloadOne'
+        'index' => '{controller}/all', // rewrite base index action
+        'view' => '{controller}/one', // rewrite base view action
+        'downloadIndex' => '{controller}/downloadAll', // define new action
+        'downloadView' => '{controller}/downloadOne' // define new action
     ],
     'routesDescription' => [
-        'GET {permanentUrl}/download' => 'downloadIndex',
-        'GET {permanentUrl}/{resourceId}/download' => 'downloadView',
-        'HEAD {permanentUrl}/files' => 'my/custom/action/without/routes/map',
+        'GET {permanentUrl}/download' => 'downloadIndex', // use the defined action
+        'GET {permanentUrl}/{resourceId}/download' => 'downloadView', // use the defined action
+        'HEAD {permanentUrl}/files' => 'my/custom/action/without/routes/map', // use the non previously defined action
     ]
 ```
 
