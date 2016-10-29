@@ -1,3 +1,8 @@
+To install thsi package add this composer dependency:
+```
+    tsamsiyu/yii-rest 1.0.0-beta1
+```
+
 The features to help working with REST api in Yii:
 
 1) Nested Routes
