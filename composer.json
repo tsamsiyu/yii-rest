@@ -4,7 +4,7 @@
   "keywords": ["yii", "routes", "route", "nested", "embed", "urlManager", "rest", "resource", "api"],
   "license": "MIT",
   "version": "1.0.0-beta1",
-  "type": "project",
+  "type": "library",
   "require": {
     "php": ">=5.6.0",
     "yiisoft/yii2": "*"
