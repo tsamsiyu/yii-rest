@@ -1,4 +1,4 @@
-To install thsi package add this composer dependency:
+To install this package add the composer dependency:
 ```
     tsamsiyu/yii-rest 1.0.0-beta1
 ```
