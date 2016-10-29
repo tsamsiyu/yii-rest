@@ -20,5 +20,10 @@
       "tsamsiyu\\yii\\rest\\": "./src",
       "tsamsiyu\\tests\\yii\\rest\\": "./tests"
     }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-beta"
+    }
   }
 }
