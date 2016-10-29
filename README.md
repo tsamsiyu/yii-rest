@@ -11,7 +11,7 @@ put it in your urlManager.rules:
 ]
 ```
 
-It will compose the next routes:
+It will generate the next routes:
 
 ```php
 'GET        companies/<companyId:\d+>/banks/<bankId:\d+>/accounts'          => 'company/bank/account/index',
@@ -25,8 +25,8 @@ It will compose the next routes:
 
 You can override the controller actions and specify the prefix:
 
-```
-    'class' => 'tsamsiyu\yii\rest',
+```php
+    'class' => 'tsamsiyu\yii\rest\NestedUrlRule',
     'resources' => ['company', 'bank', 'account'],
     'prefix' => 'v2/operator',
     'routesMap' => [

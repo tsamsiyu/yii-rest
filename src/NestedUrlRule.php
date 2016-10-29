@@ -57,7 +57,7 @@ class NestedUrlRule extends Object implements UrlRuleInterface
      */
     public $controller;
 
-    private $defaultRoutesMap = [
+    protected $defaultRoutesMap = [
         self::CREATE_ACTION => '{controller}/create',
         self::UPDATE_ACTION => '{controller}/update',
         self::INDEX_ACTION => '{controller}/index',
@@ -78,7 +78,7 @@ class NestedUrlRule extends Object implements UrlRuleInterface
         'class' => UrlRule::class
     ];
 
-    private $defaultRoutesDescription = [
+    protected $defaultRoutesDescription = [
         ['GET', '{permanentUrl}', self::INDEX_ACTION],
         ['GET', '{permanentUrl}/{resourceId}', self::VIEW_ACTION],
         ['POST', '{permanentUrl}', self::CREATE_ACTION],
